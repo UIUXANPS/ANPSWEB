@@ -1,0 +1,924 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf)
+ }
+
+ .left-sidebar {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: #212775; 
+    color: white;
+    width: 15%;
+}
+
+.gap {
+    width: 15%;
+}
+
+.gap-right {
+    width: 29%;
+}
+
+.collab {
+    display: flex;
+    right: 0;
+    width: 85%;
+    margin: 20px;
+    margin-bottom:0 ;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #f9f9f9;
+}
+.collab .main {
+    background-color:#f9f9f9;
+    color: black;
+    width: 71%;
+    border-radius: 20px 0px 0px 0px;
+    overflow: auto;
+}
+
+.right {
+    position: fixed;
+    right: 20px;
+    background-color: #f4f4f4;
+    width: 25%;
+    height: 100vh;
+    border-radius: 20px;
+    color: black;
+    filter: drop-shadow(-5px 0px 3px lightgray);
+    
+
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    background-color: #212775;
+}
+
+.left-sidebar .logo {
+    margin: 30px;
+    height: 10%;
+}
+
+.main h1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+}
+
+.main h2 {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right:40px; ;
+    font-size:40px ;
+    text-align: center;
+    font-weight: bold;
+    color: #212775;
+}
+
+.main h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 40px 0px 40px;
+}
+
+
+.logo-para {
+    display: flex;
+}
+
+.right img {
+    width: 50%;
+    height: auto;
+}
+
+.profile {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 15px; 
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rounded-button {
+    background-color: #212775;
+    color: #f9f9f9; 
+    border: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 16px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+}
+
+.rounded-button:hover {
+    background-color: #860418;
+    color: #f9f9f9; 
+    border: none;
+}
+
+.top-links {
+    height: 65%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.features {
+    display: flex;
+    margin: 30px 0px 30px 5px;
+    cursor: pointer;
+}
+
+.features li {
+    margin-left: 20px;
+    padding-top: 0.5vw;
+}
+
+
+.features svg {
+    justify-items: center;
+    align-items: center;
+}
+
+.bottom-links {
+    height: 25%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.calendar {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    font-size: 16px;  
+    font-weight: bold;
+}
+
+.month-year {
+    font-weight: bold;
+    text-align: center;
+    color: #212775;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    font-size: 16px;
+    margin: 40px 30px 40px 30px;
+}
+
+.title {
+    display: flex;
+    margin-left:30px ;
+}
+
+.decor {
+    width: 30%;
+}
+
+.title-text {
+    width: 65%;
+    margin: 30px 40px 0 40x;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+    text-align: right;
+}
+
+.title-gap {
+    width: 5%;
+}
+
+.button-partner {
+    display: flex;
+    margin-left: 40px;
+}
+
+.button-container-notmain {
+    margin-top: 15px; 
+    margin-right: 10px;
+}
+
+.button-container-notmain .rounded-button {
+    background-color: #f9f9f9;
+    color: #212775; 
+    border: 1px solid #212775 ;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 16px;
+}
+
+.button-container-notmain .rounded-button:hover {
+    background-color: #860418;
+    color: #f9f9f9; 
+    border: none;
+}
+
+.decor {
+    margin-left: 50px;
+
+}
+
+.contact h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+}
+
+.top-contact-detail {
+    margin: 30px;
+    display: flex;
+}
+
+.left-contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.right-contact {
+    display: flex;
+}
+
+.blue-container {
+    display: flex;
+    width: 100%;
+    margin: 20px 40px 0px 40px;
+}
+
+.blue-container .left-text {
+    width: 80%;
+    font-weight: bold;
+}
+
+.blue-container .right-text {
+    width: 20%;
+}
+
+.pastevent h2 {
+    width: 80%;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: left;
+    color: #101010;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+.myactivity {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+}
+
+.myactivity {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.features li:hover {
+    text-decoration: underline;
+    text-decoration-color: #f9f9f9;
+}
+
+
+.rect1 {
+    width: 30%;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title-activity p{
+    font-size: 16px;
+    margin:10px 5px 0px 5px;
+    text-align: justify;
+    font-weight: bold;
+} 
+
+.title-activity img {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.title-activity img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.details {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.details p {
+    font-size: 12px;
+    text-align: left;
+}
+
+.details img {
+    justify-content: center;
+}
+
+.rect1 img {
+    border-radius: 20px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    width: 53.5vw;
+  }
+
+  .search-container input {
+    padding-left: 50px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 20px;
+    pointer-events: none;
+  }
+
+  .long-container {
+    display: flex;
+    width: 92%;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+    align-items: center;
+    margin: 30px;
+}
+
+.long-container-activity {
+    width: 30%;
+    font-size: 32px;
+    margin:10px 30px 10px 5px;
+    text-align: justify;
+    font-weight: bold;
+} 
+
+.text {
+    width: 70%;
+    margin-top: 2px;
+    margin-bottom: 10px; 
+}
+
+.text h2 {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: 26px; 
+    font-weight: bold; 
+}
+
+.text h3 {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 26px; 
+    font-weight: bold; 
+}
+
+.text p {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 2px;
+    
+}
+
+.text-detail p {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+}
+
+
+.text img {
+    justify-content: left;
+}
+
+.details-link-horizontal {
+    font-size: 18px;
+    text-align: left;
+    text-decoration: underline;
+    color: #212775;
+    cursor: pointer;
+
+}
+
+.big-location {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.long-container img {
+    border-radius: 20px;
+}
+
+.small-rectangle {
+    background-color: #f6f6f6; /* Rectangle background color */
+    color: black; /* Text color */
+    width: 78%;
+    padding-left: 0.938vw;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    margin: 20px 20px 0px 40px;
+}
+
+
+
+.small-rectangle p {
+    padding: 8px;
+}
+
+.small-rectangle h2 {
+    padding: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.prof {
+    background-color: #f6f6f6; /* Rectangle background color */
+    color: black; /* Text color */
+    width: 78%;
+    padding-left: 0.938vw;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    margin: 20px 20px 0px 40px; 
+}
+
+.prof h3 {
+    margin-left: 20px;
+}
+
+/*for toggle*/
+.toggle-switch {
+    position: relative;
+    display: inline-flex;
+    width: 35px;
+    height: 20px;
+}
+
+.toggle-switch input {
+    opacity: 0; /* Hide the default checkbox */
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    left: -40px;
+    right: 40px;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px; /* Rounded corners */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%; /* Rounded circle */
+}
+
+/* When the checkbox is checked */
+input:checked + .slider {
+    background-color: #212775; /* Color when toggled on */
+}
+
+
+input:checked + .slider:before {
+    transform: translateX(16px); /* Move the circle to the right */
+}
+
+.toggle-container {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    margin: 10px 0; /* Add some space between toggle items */
+}
+
+.toggle-container p {
+    margin: 0; /* Remove default margin from <p> */
+    margin-right: 10px; /* Space between text and toggle */
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.line {
+    height: 2px; /* Height of the line */
+    width: 98%;
+    background-color: #212775; /* Color of the line */
+    margin: 20px 0; /* Margin above and below the line */
+    border-radius: 30px;
+
+}
+
+.pfp-setting{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    margin-top: -30px auto;
+    margin-left: 15px;
+}
+
+.profile-menu{
+    background-color: #ffffff; /*  background */
+    color: rgb(124, 123, 128); /*  text */
+    border: none; /* Remove border */
+    padding: 14px 24px;
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Make the button inline */
+    font-size: 14px; 
+    margin: 4px -40px; 
+    margin-right: 50px;
+    cursor: pointer; 
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.profile-menu:hover{
+    background-color: #212775; 
+    color: #ffffff;
+}
+
+.profile-menu:first-of-type {
+    margin-left: auto; /* Pushes the buttons to the right */
+}
+
+.setting-menu {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0; 
+}
+
+.setting-menu p {
+    margin-left: 20px; /* Remove default margin from <p> */
+    margin-right: 10px; /* Space between text and toggle */
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+#password {
+    border: none; /* Remove border */
+    outline: none; /* Remove outline on focus */
+    background: #f6f6f6;
+}
+
+.your-name-section {
+    margin-top: 10px; 
+    margin-left: 20px;
+}
+
+
+.edit-profile {
+    background-color: #212775; /*  background */
+    color: #f9f9f9; /*  text */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Add some padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Make the button inline */
+    font-size: 14px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    margin-bottom: 28px;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 30px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.edit-profile:hover {
+    background-color: #5b61b8; 
+}
+
+.setting-section h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 40px 0px 40px;
+}
+
+.small-rectangle h3 {
+    margin-top: 20px;
+}
+
+.latest-stories {
+    display: flex;
+    width: 93%;
+    gap: 20px;
+    margin: 30px;
+  }
+
+.latest-stories a {
+    cursor: pointer;
+}
+
+.latest-stories a :hover{
+    background-color: #860418;
+    color: #f9f9f9;
+}
+
+.story-card {
+    background-color: #212775;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .story-card :hover {
+    background-color: lightblue;
+  }
+
+.story-card img {
+    width: 100%;
+    height: auto;
+  }
+
+.story-card h3 {
+    padding: 15px;
+    font-size: 18px;
+    color: #f9f9f9;
+    font-weight: bold;
+    margin: 5px;
+  }
+
+.event-img {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.event-img img{
+    border: 2px solid #212775;
+    border-radius: 10px;
+}
+
+.event-text {
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 50px 0px 40px; 
+    line-height: 1.5;
+}
+
+.speaker {
+    display: flex;
+}
+
+.speaker1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.speaker1 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.speaker1 p {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.apply-button {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-left: 24vw;
+    margin-right: 24vw;
+    padding: 10px;
+    background-color: #860418;
+    border-radius: 25px;
+    color: #f9f9f9;
+    cursor: pointer;
+
+}
+
+.apply-button:hover {
+
+    background-color: #212775;
+}
+
+.right h3 {
+    margin-top: 20px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.reminder {
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.reminder p {
+    margin-top: 20px;
+}
+
+.section-title h2 {
+    color: #212775;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px;
+  }
+
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    box-shadow: 4 4px 6px rgba(10, 10, 500, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .card h3 {
+    padding: 15px;
+    font-size: 24px;
+    color: #212775;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1220px) {
+    .bottom-links {
+        height: 30%;
+        font-size: 14px;
+    }
+
+    .top-links {
+        height: 60%;
+        font-size: 14px;
+    }
+
+    .top-links img {
+        width: 30px;
+        height: auto;
+    }
+
+    .bottom-links img {
+        width: 30px;
+        height: auto;
+    }
+
+    .logo img {
+        width: 45px;
+        height: auto;
+    }
+
+    .right img {
+        width: 40%;
+        height: auto;
+        text-align: center;
+    }
+
+    .right h3 {
+        font-size:20px;
+        margin-top: 20px;
+    }
+
+    .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 16px;
+        font-size: 14px;
+        margin: 30px 20px 30px 20px;
+    }
+
+    .reminder {
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    
+    .reminder p {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .rounded-button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .section-title h2 {
+        margin-top: 20px;
+        font-size: 36px;
+      }
+    
+    .small-rectangle {
+        width: 75%;
+    }
+
+    .prof {
+        width: 75%;
+    }
+
+    .setting-section h3{
+        font-size: 16px;
+        margin: 20px 40px 0px 40px;
+    }
+
+    .line {
+        margin: 10px;
+    }
+
+    .prof h3 {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .main h1 {
+        font-size: 40px ;
+    }
+  }

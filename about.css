@@ -1,0 +1,401 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf)
+ }
+
+ .left-sidebar {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: #212775; 
+    color: white;
+    width: 15%;
+}
+
+.gap {
+    width: 15%;
+}
+
+.gap-right {
+    width: 29%;
+}
+
+.collab {
+    display: flex;
+    right: 0;
+    width: 85%;
+    margin: 20px;
+    margin-bottom:0 ;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
+.collab .main {
+    background-color:#f9f9f9;
+    color: black;
+    width: 71%;
+    border-radius: 20px 0px 0px 0px;
+    overflow: auto;
+}
+
+.right {
+    position: fixed;
+    right: 20px;
+    background-color: #f4f4f4;
+    width: 25%;
+    height: 100vh;
+    border-radius: 20px;
+    color: black;
+    filter: drop-shadow(-5px 0px 3px lightgray);
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    background-color: #212775;
+}
+
+.left-sidebar .logo {
+    margin: 30px;
+    height: 10%;
+}
+
+.main h1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+}
+
+.main img {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.main p {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.logo-para {
+    display: flex;
+}
+
+.right img {
+    width: 50%;
+    height: auto;
+}
+
+.profile {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 15px; 
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rounded-button {
+    background-color: #212775;
+    color: #f9f9f9; 
+    border: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 16px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+}
+
+.rounded-button:hover {
+    background-color: #860418;
+    color: #f9f9f9; 
+    border: none;
+}
+
+.right h3 {
+    margin-top: 20px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.reminder {
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.reminder p {
+    margin-top: 20px;
+}
+
+.top-links {
+    height: 65%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.features {
+    display: flex;
+    margin: 30px 0px 30px 5px;
+}
+
+.features li {
+    margin-left: 20px;
+    padding-top: 0.5vw;
+    cursor: pointer;
+}
+
+.features li:hover {
+    text-decoration: underline;
+    text-decoration-color: #f9f9f9;
+}
+
+.features svg {
+    justify-items: center;
+    align-items: center;
+}
+
+.bottom-links {
+    height: 25%;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.calendar {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    font-size: 16px;  
+    font-weight: bold;
+}
+
+.month-year {
+    font-weight: bold;
+    text-align: center;
+    color: #212775;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    font-size: 16px;
+    margin: 40px 30px 40px 30px;
+}
+
+.title {
+    display: flex;
+    margin-left:30px ;
+}
+
+.decor {
+    width: 30%;
+}
+
+.title-text {
+    width: 65%;
+    margin: 30px 40px 0 40x;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+    text-align: right;
+}
+
+.title-gap {
+    width: 5%;
+}
+
+.button-partner {
+    display: flex;
+    margin-left: 40px;
+}
+
+.button-container-notmain {
+    margin-top: 15px; 
+    margin-right: 10px;
+}
+
+.button-container-notmain .rounded-button {
+    background-color: #f9f9f9;
+    color: #212775; 
+    border: 1px solid #212775 ;
+    padding: 10px 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 16px;
+}
+
+.button-container-notmain .rounded-button:hover {
+    background-color: #860418;
+    border: 1px solid #860418;
+    color: #f9f9f9; 
+    border: none;
+}
+
+.decor {
+    margin-left: 50px;
+
+}
+
+.contact h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 50px ;
+    font-weight: bold;
+    color: #212775;
+}
+
+.top-contact-detail {
+    margin: 30px 30px 60px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-contact-detail img {
+    margin: 0px;
+}
+
+.top-contact-detail li {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.left-contact {
+    display: flex;
+    width: 40%;
+    cursor: pointer;
+}
+
+.right-contact {
+    display: flex;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+.gap-contact {
+    width: 10%;
+}
+
+.left-contact li {
+    padding-top: 1vh;
+    cursor: pointer;
+}
+
+@media (max-width: 1220px) {
+    .bottom-links {
+        height: 30%;
+        font-size: 14px;
+    }
+
+    .top-links {
+        height: 60%;
+        font-size: 14px;
+    }
+
+    .top-links img {
+        width: 30px;
+        height: auto;
+    }
+
+    .bottom-links img {
+        width: 30px;
+        height: auto;
+    }
+
+    .logo img {
+        width: 45px;
+        height: auto;
+    }
+
+    .right img {
+        width: 40%;
+        height: auto;
+        text-align: center;
+    }
+
+    .right h3 {
+        font-size:20px;
+        margin-top: 20px;
+    }
+
+    .calendar-days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 16px;
+        font-size: 14px;
+        margin: 30px 20px 30px 20px;
+    }
+
+    .reminder {
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    
+    .reminder p {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .rounded-button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .main p {
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 50px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .main h1 {
+        font-size: 40px ;
+    }
+
+    .right-contact img {
+        padding-top: 11.2px;
+        width: 50px;
+        height: 50px;
+    }
+}

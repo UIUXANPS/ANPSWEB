@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>ANPS</title>
+    <link rel="icon" type="image/x-icon" href="asset/logo color.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="gap">
+            <aside class="left-sidebar">
+                <div class="logo">
+                    <img src="asset/logo white.png" width="60px" height="60px">
+                </div>
+
+                <div class="top-links">
+                    <ul>
+                        <div class="features">
+                            <img src="svg/dashboard.svg" alt="" width="35px" height="35px">
+                            <li><a href="Dashboard.html">Dashboard</a></li>
+                        </div>
+                        <div class="features">
+                            <img src="svg/community.svg" alt="" width="35px" height="35px">
+                            <li><a href="community.html">Community</a></li>
+                        </div>
+                        <div class="features">
+                            <img src="svg/news.svg" alt="" width="35px" height="35px">
+                            <li><a href="news.html">News</a></li>
+                        </div>
+                        <div class="features">
+                            <img src="svg/about.svg" alt="" width="35px" height="35px">
+                            <li><a href="About.html">About Us</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="bottom-links">
+                    <ul>
+                        <div class="features">
+                            <img src="svg/setting.svg" alt="" width="35px" height="35px">
+                            <li><a href="settings.html">Settings</a></li>
+                        </div>
+                        <div class="features">
+                            <img src="svg/logout.svg" alt="" width="35px" height="35px">
+                            <li><a href="index.html">Log Out</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="collab">
+            <div class="main">
+                <h1>Profile</h1>
+                <div class="prof">
+                    <h3 class="setting-section">Profile Photo</h3>
+                    <div class="setting-menu">
+                        <img id="profileImage" src="asset/default-pic.png" alt="profile picture" class="pfp-setting">
+                        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                        <a href="#" id="removeButton" class="profile-menu">Remove</a>
+                        <a href="#" id="uploadButton" class="profile-menu">Change</a>
+                    </div>
+                    <div class="line"></div>
+                    <h3 class="setting-section">Your Name</h3>
+                    <div class="setting-menu your-name-section">
+                        <span id="name" class="editable" contenteditable="false">John Doe</span>
+                        <a href="#" id="editTextName" class="profile-menu">Edit</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="setting-section"></div>
+                    <h3 class="setting-section">Your Email</h3>
+                    <div class="setting-menu your-name-section">
+                        <span id="email" class="editable" contenteditable="false">johndoe@gmail.com</span>
+                        <a href="#" id="editEmail" class="profile-menu">Edit</a>
+                    </div>
+                    <div class="line"></div>
+                    <h3 class="setting-section">Change your password</h3>
+                    <div class="setting-menu your-name-section">
+                        <input id="password" type="password" class="editable" value="password" readonly>
+                        <a href="#" id="editPassword" class="profile-menu">Change</a>
+                         </div>
+                </div>
+                
+               
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

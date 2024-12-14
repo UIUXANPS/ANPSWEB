@@ -1,0 +1,144 @@
+@font-face {
+    font-family: titleFont;
+    src: url(Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf)
+}
+
+body ,html{
+    overflow: hidden;
+}
+
+.landing {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 38%;
+    left: 46%;
+}
+
+  .judul {
+    position: absolute;
+    display: flex;
+    left: 5%;
+    text-align: left;
+    color: white;
+    font-size: 7.5vw;
+    font-family: titleFont;
+    justify-content: center;
+    justify-self: center;
+    top: 19%;
+    font-weight: bold;
+
+  }
+  .deskripsi{
+    position: absolute;
+    display: flex;
+    left: 5.6%;
+    text-align: left;
+    color: white;
+    font-size: 1.5vw;
+    font-family: titleFont;
+    justify-content: center;
+    justify-self: center;
+    top: 56%;
+    line-height: 1.8;
+  }
+  .tombol {
+    position: absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-left: 5.6%; 
+    top: 70%;
+    font-weight: bold;
+}
+
+.signbiru{
+    font-family: titleFont;
+    font-size: 1vw;
+    padding: 10px 20px; 
+    border: 2px solid #90B4FF;
+    border-radius: 30px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    background-color: #90B4FF; 
+    color: black; 
+}
+.started {
+    font-family: titleFont;
+    font-size: 1vw;
+    padding: 10px 20px; 
+    border: 2px solid #90B4FF;
+    border-radius: 30px; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    background-color: transparent; 
+    color: white; 
+}
+
+.signbiru:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.started:hover {
+    background-color: #90B4FF;
+    color: black;
+}
+
+@media (max-width: 2560px){
+    .bg img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logo img {
+        width: 130px;
+        height: auto;
+    }
+
+    /* .logo img {
+        width: 130px;
+        height: auto;
+    } */
+
+    .signbiru{
+        font-family: titleFont;
+        font-size: 1.5vw;
+        padding: 10px 20px; 
+        border: 2px solid #90B4FF;
+        border-radius: 30px; 
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        background-color: #90B4FF; 
+        color: black; 
+    }
+    .started {
+        font-family: titleFont;
+        font-size: 1.5vw;
+        padding: 10px 20px; 
+        border: 2px solid #90B4FF;
+        border-radius: 30px; 
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        background-color: transparent; 
+        color: white; 
+    }
+}
+
+@media (max-width: 1220px) {
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+}

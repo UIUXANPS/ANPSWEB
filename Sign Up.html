@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPS Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sign Up.css">
+    <link rel="icon" type="image/x-icon" href="asset/logo color.png">
+</head>
+<body>
+
+<!-- Main Container for Left and Right Sections -->
+<div class="main-container">
+    <!-- Left Sidebar (35%) -->
+    <div class="left-sidebar">
+        <div class="rectangle-left">
+            <img src="svg/ANPS-logo.svg" alt="Logo ANPS" class="anps-svg">
+            <h1 style="font-size: 36px;  margin-top: 50px; margin-left: 20px;">
+            Join ANPS Now!</h1>
+            <div class="image-container">
+                <img src="asset/ryan sign.png" alt="Ryan Sign" class="sidebar-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Container (65%) -->
+    <div class="right-container">
+        <!-- Top Navigation for Existing Users -->
+        <!-- <div class="signupfirst"> -->
+            <!-- <span>Have an account?</span> -->
+            <!-- <a href="Log In.html" class="right-text">Log In</a> -->
+        <!-- </div> -->
+
+        <!-- Form Heading -->
+        <div class="form-heading">
+            <h2>Create an Account</h2>
+            <p>Please Fill in the Form</p>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-container">
+            <input type="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Password">
+            <img class="toggle-visibility" id="toggle-password" src="svg/eye-closed.svg" alt="Toggle Password Visibility">
+        </div>
+        <div class="input-container">
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+            <img class="toggle-visibility" id="toggle-confirm-password" src="svg/eye-closed.svg" alt="Toggle Password Visibility">
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+
+        <!-- Checkbox for Updates -->
+        <div class="Bergabung">
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">I accept all update from ANPS</label>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <a href="Dashboard.html" class="btn-primary">Sign Up</a>
+            <a href="Dashboard.html" class="btn-secondary">
+                <img src="svg/google_icon.svg" alt="Google Icon" class="google-icon">
+                Sign In Google</a>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="ToC">
+            <p>By making this account, I agree to <a href="#" class="link">Terms and Conditions</a>, and 
+                <a href="#" class="link">Privacy Policy</a> in ANPS</p>
+        </div>
+    </div>
+</div>
+
+<script src="signup-validation.js"></script>
+
+</body>
+</html>

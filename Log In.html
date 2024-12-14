@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPS Log In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Log In.css">
+    <link rel="icon" type="image/x-icon" href="asset/logo color.png">
+</head>
+<body>
+
+<!-- Main Container for Left and Right Sections -->
+<div class="main-container">
+    <!-- Left Sidebar (35%) -->
+    <div class="left-sidebar">
+        <div class="rectangle-left">
+            <img src="svg/ANPS-logo.svg" alt="Logo ANPS" class="anps-svg">
+            <h1 style="font-size: 36px; margin-top: 50px; margin-left: 20px;">
+                Hello, Welcome Back
+                to ANPS</h1>
+            <div class="image-container">
+                <img src="asset/ryan log.png" alt="Ryan Sign" class="sidebar-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Container (65%) -->
+    <div class="right-container">
+        <!-- Top Navigation for Existing Users -->
+        <!-- <div class="signupfirst"> -->
+            <!-- <span>Don't have an account yet?</span> -->
+            <!-- <a href="Sign Up.html" class="right-text">Create an Account</a> -->
+        <!-- </div> -->
+
+        <!-- Form Heading -->
+        <div class="form-heading">
+            <h2>Log in to ANPS</h2>
+            <p>Please Enter your Email</p>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-container">
+            <input type="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Password">
+            <img class="toggle-visibility" id="toggle-password" src="svg/eye-closed.svg" alt="Toggle Password Visibility">
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+
+        <!-- Checkbox for Updates -->
+        <div class="Bergabung">
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Remember Me</label>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <a href="Dashboard.html" class="btn-primary">Log In</a>
+            <a href="Dashboard.html" class="btn-secondary">
+                <img src="svg/google_icon.svg" alt="Google Icon" class="google-icon">
+                Log In Google </a>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="LupaPassword">
+            <p>Forgot password? 
+                <a href="#" class="link">Reset your Password</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="signup-validation.js"></script>
+
+</body>
+</html>
+
+

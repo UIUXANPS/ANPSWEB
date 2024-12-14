@@ -1,0 +1,209 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #212775; /* Blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.main-container {
+    display: flex; /* Flex layout for left and right containers */
+    width: 100vw;
+    height: auto; /* Full viewport height */
+    background-color: #212775; /* Blue background */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box; /* Include padding in width/height */
+    position: fixed;
+}
+
+/* Left Sidebar (35%) */
+.left-sidebar {
+    width: 35vw; /* Take 35% of the viewport width */
+    height: 95vh; /* Adjust height relative to viewport */
+    background-color: #f8f5f5; /* Light background */
+    color: #212775; /* Dark text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw; /* Padding inside the sidebar */
+    box-sizing: border-box;
+    border-radius: 1vw 0 0 1vw;
+}
+
+.image-container {
+    width: 70%; /* Full width of the parent */
+    max-width: 45vw; /* Adjust max-width for responsiveness */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-left: 3vw;
+}
+
+.anps-svg {
+    width: 3vw;
+    height: 3vw;
+    filter: drop-shadow(0.3vw 0.3vw 0.2vw rgba(0, 0, 0, 0.3));
+    margin-top: 20vh;
+    margin-left: 10px;
+}
+
+
+/* Sidebar Image */
+.sidebar-image {
+    width: 100%; /* Make image responsive */
+    height: 80vh; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure it scales properly */
+    transform: scale(1.2) translateY(-8vh); /* Adjust positioning */
+}
+
+/* Right Container (65%) */
+.right-container {
+    width: 65vw; /* Take 65% of the viewport width */
+    height: 95vh; /* Adjust height relative to viewport */
+    background-color: white; /* White background for form */
+    padding-left: 15vh;
+    padding-right: 15vh;
+    border-radius: 0 1vw 1vw 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sign-Up Navigation */
+.signupfirst {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5vw;
+    margin-bottom: 4vh;
+    font-size: 2vh;
+    color: #333;
+}
+
+.right-text {
+    color: #212775;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+/* Form Heading */
+.form-heading h2 {
+   color: #212775;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-heading p {
+    color: #666;
+    font-size: 2vh;
+    margin-bottom: 4vh;
+}
+
+/* Input Fields */
+.input-container {
+    position: relative;
+    margin-bottom: 3vh;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 1.6vh 2vw;
+    font-size: 2.4vh;
+    border: 1px solid #ccc;
+    border-radius: 0.6vw;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 1.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.4vh;
+    height: 2.4vh;
+    cursor: pointer;
+}
+
+/* Checkbox for Updates */
+.Bergabung {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.Bergabung input {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.Bergabung label {
+    font-size: 2vh;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    margin-bottom: 4vh;
+}
+
+.btn-primary {
+    background-color: #212775;
+    color: white;
+    border: none;
+    padding: 1.6vh;
+    font-size: 2vh;
+    border-radius: 0.6vw;
+    cursor: pointer;
+    text-align: center;
+    height: 4.5vh;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    display: flex;
+    background-color: transparent;
+    color: #212775;
+    border: 0.1vw solid #212775;
+    padding: 1.6vh;
+    font-size: 2vh;
+    border-radius: 0.6vw;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 2;
+    gap: 0.5vw;
+    text-decoration: none;
+}
+
+.google-icon{
+    width: 4vh;
+    height: 4vh;
+}
+
+.LupaPassword{
+    text-align: center;
+    margin-top: -2vh; /* Adjust this to move it closer to the buttons */
+    margin-bottom: 0; /* Remove any unwanted space below */
+    line-height: 1.5; /* Adjust the spacing of the text itself */
+    font: 1vq;
+ }
+
+ .LupaPassword a{
+    color: #212775;
+    text-decoration: none;
+    font-weight: bold;
+    font: 1vw;
+ }
+    
+   
+
